@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>jQuery Test Page</title>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <h1>jQuery Test Page</h1>
+        <div id="myDiv">This is my div!
+            <ul>
+                <li>I'm a list item!</li>
+                <li>I'm a list item!</li>
+                <li>I'm a list item!</li>
+                <li>I'm a list item!</li>
+                <li>I'm a list item!</li>
+                <li>I'm a list item!</li>
+                <li>I'm a list item!</li>
+
+            </ul>
+
+
+
+        </div>
+        <script>
+            //alert("this is not jQuery");
+
+            // $('document').ready(function(){
+            //     alert("still working");
+            // });
+
+            // jQuery('document').ready(function(){
+            //     alert("This is jQuery!");
+            // });
+                /*
+                $("div#myDiv").css("border","2px solid red");
+                $("div#myDiv").css("background-color","yellow");
+                $("div#myDiv").append(" This gets added to my div!");
+                $("div#myDiv").fadeOut();
+                */
+                $("div#myDiv li:even").css("background-color","aqua");
+                $("div#myDiv").hide().fadeIn(5000, function(){
+                    $("div#myDiv li").each(function(){
+                        $(this).slideDown(2000);
+                    });
+
+                });
+
+            // $(function(){
+            //     $("div#myDiv").css("border","2px solid red");
+            //     $("div#myDiv").css("background-color","yellow");
+            //     $("div#myDiv").append(" This gets added to my div!");
+            // });
+            
+            // let $thisDiv = $("div#myDiv");
+            // $thisDiv.css("border","2px solid red").css("background-color","yellow").append(" This gets added to my div!");
+
+        </script>
+    </body>
+</html>
